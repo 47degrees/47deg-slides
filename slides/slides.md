@@ -53,10 +53,6 @@ Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deseru
 
 __Lorem__ ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
-Emulating __higher kinded types__ is based on `defunctionalization`
-[__Lightweight higher-kinded polymorphism__](https://www.cl.cam.ac.uk/~jdy22/papers/lightweight-higher-kinded-polymorphism.pdf)
-by Jeremy Yallop and Leo White
-
 ```diff
 + @higherkind
 + class Option<A> : OptionOf<A>
@@ -68,7 +64,8 @@ by Jeremy Yallop and Leo White
 
 ---
 
-Once we have a `Kind` representation we can provide `extensions`
+Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum...
+
 
 ```swift
 func allIntsEqual(_ array: [Int]) -> Bool {
@@ -84,7 +81,7 @@ func allStringsEqual(_ array: [String]) -> Bool {
 
 ---
 
-This will export all extensions functions declared in `Functor` into `IO`
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
 
 ```swift
 enum DivideError: Error {
@@ -123,7 +120,7 @@ func divideValidated(x: Int, y: Int) -> Validated<DivideError, Int> {
 
 ---
 
-Data types may provide extensions for type classes based on capabilities:
+Lorem ipsum dolor sit amet, consectetur adipiscing elit:
 
 | Type class | Combinators | **List** |
 | --- | --- | --- |
@@ -135,21 +132,6 @@ Data types may provide extensions for type classes based on capabilities:
 | MonadDefer | delay, suspend | ✕ |
 | Async | async | ✕ |
 | Effect | runAsync | ✕ |
-
----
-
-Data types may provide extensions for type classes based on capabilities:
-
-| Type class | Combinators | **List** | **Either** |
-| --- | --- | --- | --- |
-| Functor | map, lift | ✓ | ✓ |
-| Applicative | pure, ap | ✓ | ✓ |
-| ApplicativeError | raiseError, catch | ✕ | ✓ |
-| Monad | flatMap, flatten | ✓ | ✓ |
-| MonadError | ensure, rethrow | ✕ | ✓ |
-| MonadDefer | delay, suspend | ✕ | ✕ |
-| Async | async | ✕ | ✕ |
-| Effect | runAsync | ✕ | ✕ |
 
 ---
 
