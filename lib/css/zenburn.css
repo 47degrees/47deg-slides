@@ -9,7 +9,7 @@ based on dark.css by Ivan Sagalaev
   display: block;
   overflow-x: auto;
   padding: 0.5em;
-  background: rgba(63, 63, 63, 0.9);
+  background: #3f3f3f;
   color: #dcdcdc;
 }
 
